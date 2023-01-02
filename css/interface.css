@@ -1,8 +1,12 @@
-.container {
+body {
+    background-color: #031018;
+    border: none;
+}
+
+.main-container {
     /*controlls the extension interface size*/
     width: 300px;
     height: 400px;
-    background-color: #031018;
 }
 
 button {
