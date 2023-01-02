@@ -1,0 +1,20 @@
+.container {
+    /*controlls the extension interface size*/
+    width: 300px;
+    height: 400px;
+    background-color: #031018;
+}
+
+button {
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+button.current {
+    box-shadow: 0 0 0 2px white,
+        0 0 0 4px blue;
+}

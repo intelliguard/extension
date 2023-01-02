@@ -1,0 +1,23 @@
+.my-div {
+    margin-right: 10px;
+}
+
+#my-button {
+    border: none;
+    border-radius: 40px;
+    height: 34.750px;
+    width: 80px;
+    background-color: #16181c;
+    color: #f2f2f2;
+    font-family: TwitterChirp;
+    font-weight: 750;
+    transition-property: color, background-color;
+    transition-duration: 0.05s, 0.05s;
+    transition-timing-function: ease, ease-in;
+    cursor: pointer;
+}
+
+#my-button:hover {
+    color: #1d9bf0;
+    background-color: #031018;
+}

@@ -1,0 +1,23 @@
+{
+    "name": "test name",
+    "description": "Test description",
+    "version": "0.1",
+    "manifest_version": 3,
+    "host_permissions": [ "https://twitter.com/*" ],
+    "permissions": [ "tabs", "scripting" ],
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "icons": {
+        "512": "./assets/fake-news.png"
+    },
+
+    "action": {
+        "default_popup": "interface.html",
+        "default_icon": {
+            "512": "./assets/fake-news.png"
+        }
+    }
+
+}
