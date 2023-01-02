@@ -22,7 +22,7 @@ async function Buttoncreation(){
 
     // Add Event Listener
     button.addEventListener('click', function() {
-    alert(`send the ID: ${tweetId} to the server`);
+    alert(`send the ID:  to the server`);
     //TODO
     });
 
@@ -31,3 +31,4 @@ async function Buttoncreation(){
     button.id = 'my-button';
 }
 Buttoncreation()
+
