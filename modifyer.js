@@ -5,28 +5,28 @@ async function Buttoncreation(){
     // Get the parent element
     var parent = document.querySelector('.css-1dbjc4n.r-1awozwy.r-6koalj.r-18u37iz');
 
-    // Create the new div element
+    // Create a new div element
     var newDiv = document.createElement('div');
 
     // Add the new div as the first child of the parent element
     parent.insertBefore(newDiv, parent.firstChild);
 
-    // Create the button element
+    // Create a button element
     var button = document.createElement('button');
 
-    // Set the button's text content
+    // Set button's text content
     button.textContent = 'Analyse';
 
-    // Add the button to the new div element
+    // Add button to the new div element
     newDiv.appendChild(button);
 
-    // Add a Event Listener
+    // Add Event Listener
     button.addEventListener('click', function() {
     alert(`send the ID: ${tweetId} to the server`);
     //TODO
     });
 
-    // Give the div element a class
+    // Give the elements a class
     newDiv.className = 'my-div';
     button.id = 'my-button';
 }
