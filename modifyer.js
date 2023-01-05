@@ -1,3 +1,12 @@
+var tweetId
+
+chrome.runtime.onMessage.addListener(gotMessage)
+
+function gotMessage(message) {
+    tweetId = message.txt
+    console.log(tweetId)
+}
+
 async function Buttoncreation(){
     const wait = (amount = 0) => new Promise(resolve => setTimeout(resolve, amount));
     await wait(2000);
@@ -22,7 +31,7 @@ async function Buttoncreation(){
 
     // Add Event Listener
     button.addEventListener('click', function() {
-    alert(`send the ID:  to the server`);
+    console.log("the TweetID:" + tweetId + "has been sent")
     //TODO
     });
 
@@ -31,4 +40,3 @@ async function Buttoncreation(){
     button.id = 'my-button';
 }
 Buttoncreation()
-
